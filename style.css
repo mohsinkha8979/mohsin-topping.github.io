@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);}
+
+header{
+display: flex;
+background: #84fab0;
+height: 40px;
+width: 100%;
+text-align: center;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    margin-left: 40%;
+}
+li{
+    font-size: 24px;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    background: blue;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+
+.flexbox {
+  display: flex;
+  background-color: aqua;
+}
+
+.flexbox > div {
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+img{
+    border-radius: 50%;
+   
+    animation: 5s animation linear infinite;
+}
+
+button:hover{
+    background: wheat;
+    color: black;
+}
+@media screen and (max-width:920px) {
+
+    .flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+   button{
+    transform: rotate(20deg);
+    background: gray;
+   }
+   span{
+    color: red;
+   }
+}
+
+@keyframes animation {
+    0%{
+ transform: rotate(30deg);
+    }
+    50%{
+ transform: rotate(-30deg);
+
+    }
+    100%{
+ transform: rotate(30deg);
+
+    }
+}
+
+footer p{
+    font-size: 22px;
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+    color: #e80865;
+}
